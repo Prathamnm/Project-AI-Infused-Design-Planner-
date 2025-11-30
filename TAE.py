@@ -24,7 +24,7 @@ with st.container():
     """, unsafe_allow_html=True)
 
 # Initialize OpenAI client
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="LLM API KEY / OPEN AI API KEY")
 
 # Prompt generator
 def generate_prompt(subjects_lecture, subjects_practical, division, all_teachers, all_rooms):
@@ -191,3 +191,4 @@ if st.button("Generate Timetable"):
                     st.code(timetable, language="markdown")
             except Exception as e:
                 st.error(f"❌ Error generating timetable for {division}: {e}")
+
